@@ -1,18 +1,18 @@
+fun main() {
+    for(value in 1..100){
+        println(FizzBuzz().checkFizzBuzz(value))
+    }
+}
+
 class FizzBuzz {
     fun checkFizzBuzz (value: Int) : String{
-        var modThree = false
-        var modFive = false
-        if (value%3 == 0) { modThree =true}
-        if (value%5 == 0) { modFive =true}
-        if (modThree && modFive){
-            return "FizzBuzz"
-        }
-        if (modThree){
-            return "Fizz"
-        }
-        if (modFive){
-            return "Buzz"
-        }
+        val modThree = (value%3) == 0
+        val modFive = (value%5) == 0
+
+        if(modThree && modFive) return "FizzBuzz"
+        if(modThree) return "Fizz"
+        if(modFive) return "Buzz"
+
         return value.toString()
     }
 }
