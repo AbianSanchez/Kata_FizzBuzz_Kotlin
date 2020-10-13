@@ -1,5 +1,5 @@
 class FizzBuzz {
     fun checkFizzBuzz (value: Int) : String{
-        return ""
+        return value.toString()
     }
 }
