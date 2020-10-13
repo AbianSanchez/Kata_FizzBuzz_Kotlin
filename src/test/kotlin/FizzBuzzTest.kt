@@ -9,4 +9,10 @@ internal class FizzBuzzTest {
         val value = FizzBuzz().checkFizzBuzz(2)
         assertThat(value).isEqualTo("2")
     }
+
+    @Test
+    fun checkFizzBuzz_ReturnFizz() {
+        val value = FizzBuzz().checkFizzBuzz(3)
+        assertThat(value).isEqualTo("Fizz")
+    }
 }
